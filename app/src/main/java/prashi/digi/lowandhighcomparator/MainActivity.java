@@ -11,10 +11,10 @@ import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
-    int low = 1;
-    int high = 20;
     int randomNumber = 0;
     public void generateRandomNumber() {
+        int low = 1;
+        int high = 20;
         Random r = new Random();
         randomNumber = r.nextInt(high-low) + low;
     }
